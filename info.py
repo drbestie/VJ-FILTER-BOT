@@ -11,9 +11,10 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '28996064'))
+API_HASH = environ.get('API_HASH', '
+e09920a63e5f157b85a64ddba66596c6')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8169604084:AAHhctMb9YApo8NDO6UR9DdDQ1o4IizZjfs")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -26,10 +27,10 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002280652416'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]  # For Multiple Id Use One Space Between Each.
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002352357605').split()]  # For Multiple Id Use One Space Between Each.
 
 # auth_channel means force subscribe channel.
 # if REQUEST_TO_JOIN_MODE is true then force subscribe work like request to join fsub, else if false then work like normal fsub.
@@ -112,10 +113,10 @@ USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
 
 
 # Token Verification Info :
-API = environ.get("API", "") # shortlink api
-URL = environ.get("URL", "") # shortlink domain without https://
+API = environ.get("API", "c6015f441edba680eef58b13c155bf29bbc7f783") # shortlink api
+URL = environ.get("URL", "onepageyam.com") # shortlink domain without https://
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "") # how to open link 
-BOT_USERNAME = environ.get("BOT_USERNAME", "") # bot username without @
+BOT_USERNAME = environ.get("BOT_USERNAME", "akksdvbot") # bot username without @
 VERIFY = environ.get("VERIFY", "True") # set True Or False and make sure spelling is correct and first letter capital.
 
 # If You Fill Second Shortner Then Bot Attach Both First And Second Shortner And Use It For Verify.
